@@ -1,22 +1,34 @@
-console.log("hello world")
-//console.log(global);
-const os=require('os');
+const http=require('http')
 const path=require('path')
-const {add,divide,substract,multiply}=require('./math')
+const fs=require('fs')
+const fsPromises=require('fs').promises
 
-// console.log(os.type());
-// console.log(os.homedir());
-// console.log(os.version());
-// console.log(__dirname);
-// console.log(__filename);
+const logEvents=require('./logEvents')
 
-// console.log(path.dirname(__filename))
-// console.log(path.basename(__filename))
-// console.log(path.extname(__filename))
+const EventEmitter=require('events')
 
-// console.log(path.parse(__filename))
+class MyEmitter extends EventEmitter{ };
 
-console.log(add(2,5))
-console.log(divide(2,5))
-console.log(multiply(2,5))
-console.log(substract(2,5))
+
+const myEmitter=new MyEmitter();
+
+
+const PORT=process.env.PORT || 3500;
+const server=http.createServer((req,res)=>
+{
+    console.log(req.url,req.method);
+
+let filePath;
+if(req.url='/'||req.url==='index.html'){
+    res.statusCode=200;
+    res.setHeader('Content-Type', 'text/html');
+    filePath=path.join(__dirname,'views','index.html');
+    fs.readFileSync(filePath, 'utf8',(err, data)=>{
+        res.end(data);
+
+    })
+}
+
+
+});
+server.listen(PORT,()=>console.log(`Server running on ${PORT}`));
