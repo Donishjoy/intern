@@ -25,4 +25,20 @@ app.get('/hello(.html)?',(req,res,next)=>{
     res.send("Hello world")
 })
 
+//chain routers
+const one=(req,res,next)=>{
+    console.log('one')
+    next()
+;}
+const two=(req,res,next)=>{
+    console.log('two')
+    next()
+;}
+const three=(req,res,next)=>{
+    console.log('three')
+    res.send('finished')
+}
+
+app.get('/chain(.html)?',[one,two,three]);
+
 app.listen(PORT,()=>console.log(`server running on ${PORT}`))
