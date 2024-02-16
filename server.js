@@ -4,7 +4,7 @@ const app = express()
 const path=require('path')
 const cors=require('cors')
 const {logger}=require('./middleware/logEvents')
-
+const corsOption=require('./config/corsOptions')
 const errorHandler=require('./middleware/errorHandler')
 const PORT=process.env.PORT || 3500; 
 
@@ -12,17 +12,6 @@ const PORT=process.env.PORT || 3500;
 app.use(logger);
 //cross origin resource sharing
 
-const whitelist=['https://yoursite.com','https://127.0.0.1:5500','https://localhost:3500']
-const corsOption={
-    origin:(origin,callback)=>{
-        if(whitelist.indexOf(origin)!==-1 ||!origin){
-            callback(null,true)
-        }
-        else{
-            callback(new Error('not allowed by cors'))
-        }
-    },optionsSuccessStatus:200
-}
 app.use(cors(corsOption));
 //built in middleware to urlencoded data
 //form data
@@ -38,9 +27,8 @@ app.use('/subdir',express.static(path.join(__dirname,'/public')))
 
 //routes
 app.use('/',require('./routes/root'));
-
 app.use('/subdir',require('./routes/subdir'));
-
+app.use('/employees',require('./routes/api/employees'))
 
 
 
