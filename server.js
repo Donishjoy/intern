@@ -33,20 +33,17 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 //serve static files
-app.use(express.static(path.join(__dirname,'/public')))
+app.use('/',express.static(path.join(__dirname,'/public')))
+app.use('/subdir',express.static(path.join(__dirname,'/public')))
+
+//routes
+app.use('/',require('./routes/root'));
+
+app.use('/subdir',require('./routes/subdir'));
 
 
 
-app.get('/',(req,res)=>
-{
-res.sendFile(path.join(__dirname,'views','index.html'));
-});
 
-//redirect
-app.get('/new',(req,res)=>
-{
-    res.redirect('/')
-})
 
 //route handlers
 
