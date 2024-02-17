@@ -3,9 +3,8 @@ const router = express.Router();
 const data = {};
 data.employees = require('../../data/employees.json');
 const employeesController=require('../../controllers/employeesController')
-const verifyJWT=require('../../middleware/verifyJWT')
 router.route('/')
-    .get(verifyJWT,employeesController.getAllEmployees)
+    .get(employeesController.getAllEmployees)
     .post(employeesController.createNewEmployee)
     .put(employeesController.updateEmployee)
     .delete(employeesController.updateEmployee);
