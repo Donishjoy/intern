@@ -15,10 +15,17 @@ const foundUser=usersDB.users.find(person=>person.username===user);
 if(!foundUser) return res.sendStatus(401) //Unauthorized
 const match=await bcrypt.compare(pwd,foundUser.password)
 if(match){
+
+    const roles=Object.values(foundUser.roles);
     //create JWT
 const accessToken=jwt.sign(
     {
-        "username":foundUser.username},
+        
+            "UserInfo":{
+        "username":foundUser.username,
+    "roles":roles
+    }
+    },
         process.env.ACCESS_TOKEN_SECRET,//secret or private key for signing token 
         {expiresIn:'30s'}
 )

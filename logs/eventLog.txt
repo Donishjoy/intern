@@ -1702,4 +1702,772 @@
   }
 
   return (0, _stringify.unsafeStringify)(rnds);
-}	GET	undefined	/refresh
+}	GET	undefined	/refresh20240217	14:35:28	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	14:35:33	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:35:42	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:35:56	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:36:02	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	14:36:08	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:36:34	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:36:35	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:37:23	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	14:37:27	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/logout20240217	14:38:25	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/refresh20240217	15:49:59	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:50:21	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees20240217	15:50:31	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/employees20240217	15:51:09	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees20240217	15:51:36	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:52:13	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/employees20240217	15:52:32	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees20240217	15:53:36	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:53:58	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/employees20240217	15:54:04	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees20240217	15:57:03	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:57:13	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees20240217	15:58:02	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/employees20240217	15:58:10	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:58:21	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/employees20240217	15:58:48	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	DELETE	undefined	/employees20240217	15:58:53	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:59:05	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	DELETE	undefined	/employees20240217	15:59:20	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	POST	undefined	/auth20240217	15:59:30	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	DELETE	undefined	/employees20240217	15:59:39	function v4(options, buf, offset) {
+  if (_native.default.randomUUID && !buf && !options) {
+    return _native.default.randomUUID();
+  }
+
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.unsafeStringify)(rnds);
+}	GET	undefined	/employees

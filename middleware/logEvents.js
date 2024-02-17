@@ -26,7 +26,7 @@ await fsPromises.appendFile(path.join(__dirname,'..','logs','eventLog.txt'),logI
 const logger=(req,res,next)=>
 {
     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`,'reqLog.txt')
-    console.log(`${req.method}${req.path}`);
+
     next();
 }
 
