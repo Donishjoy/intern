@@ -13,7 +13,7 @@ const createNewEmployee=(req, res) => {
         firstname: req.body.firstname,
         lastname: req.body.lastname
     }
-    if(!newEmployee.firstname || newEmployee.lastname)
+    if(!newEmployee.firstname || !newEmployee.lastname)
     {
         return res.status(400).json({'message':'First and last name are required'})
     }
